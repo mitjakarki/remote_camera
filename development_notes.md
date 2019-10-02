@@ -1,3 +1,5 @@
+## Development notes
+
 In this project a regular digital camera was turned into a remote controllable one using arduino and an infrared remote.
 
 The main components in this project are:
@@ -17,4 +19,14 @@ The battery provides power not only for the camera, but for all the other compon
 
 Human eye can't sense the infrared light from the remote, but a digital camera can. So I just pointed it at my mobile phone's camera to confirm that the IR led indeed was lit.
 
+The next thing was to establish a connection between arduino and the infrared transmitter. I started by wiring the TSOP1738 to the arduino [image here].
+The sensor datasheet [link here] includes a wiring example, which I replicated on my breadboard:
+*-22 uF capacitor between 5 V and GND 
+*-sensor Vs to 5 V via a 100 ohm resistor
+*-GND to GND
+*-sensor signal out pin to arduino digital pin 2
 
+Before I started reading the sensor output with arduino, I confirmed that the sensor was outputting signal, which actually was very clear [image here]. The remote control has five buttons, all of which were tested with the oscilloscope.
+The waveforms were saved and decoded with pencil and paper. The information turned out to be manchester-encoded [link here], which is a common encoding protocol in infrared communication.
+
+It was time to reverse-engineer the camera. For that, the camera needed to be partly dissassembled [images here]. The shutter button controls both the focus and the shutter.  The goal was to control shutter and focus remotely
