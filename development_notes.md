@@ -1,4 +1,4 @@
-## Development notes
+# Development notes
 
 In this project a regular digital camera was turned into a remote controllable one using arduino and a basic infrared remote.
 
@@ -20,9 +20,9 @@ You'll also need:
 * -basic tools for building and debugging electronics (oscilloscope, multimeter, soldering iron, variable power supply etc.)
 
 
-## Workflow:
+# Workflow:
 
-# Hardware
+## Hardware
 The first thing was to ensure all the main components are in working order. The camera's battery had died over the years and unfortunately could not be used anymore.
 So to confirm that the camera works, wires needed to be connected to the battery contacts of the camera and voltage applied to them.
 
@@ -81,7 +81,7 @@ With all the functional parts gathered and working, I soldered all them together
 
 To help connect all the ground and voltage supply connections as well as the passive components together, I used a small piece of prototyping board. 
 
-# Software
+## Software
 The software for the arduino was written in arduino IDE and utilizes the IRremote library available in the arduino library manager. For the source code, see [source](src/main_prog2/main_program.ino).
 I got lucky and the remote controlled camera worked on the first try! Some small tweaks to the SW were made throughout the rest of the project.
 A quick run-through of the software functionality:
@@ -90,7 +90,7 @@ A quick run-through of the software functionality:
 * -if CH- is pressed, then take a photo
 * -arduino built-in LED is used to notify the user of photo and focus events by blinking it
 
-# Enclosure
+## Enclosure
 When the whole system was confirmed working, the next thing was to make it a bit more neat by creating an enclosure for it. I decided to go with a simple box with cutouts for the buttons and camera controls as well as the infrared sensor and camera lens. I began by creating a box without a lid. After the box had been designed and 3D-printed, I fitted the components inside.
 
 ![Image](images/case_front.jpg)
@@ -114,7 +114,7 @@ Some photos of the finished project:
 ![Image](images/final_side.jpg)
 
 
-## Lessons learnt
+# Lessons learnt
 
 This was a fun project and was more of a refresh of skills instead of learning new ones. However, I have not been so familiar of infrared communication protocols before, so at least that was new to me. Furthermore, the markdown syntax used in this documentation is also quite new to me.
 
