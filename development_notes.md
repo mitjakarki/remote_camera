@@ -103,15 +103,15 @@ The case was designed in FreeCAD and printed with a basic PLA 3D-printer. 100 % 
 
 Some photos of the finished project:
 
-![Image](images/final_front.jpg)
+![Image](images/final_front.JPG)
 
-![Image](images/final_front_right.jpg)
+![Image](images/final_front_right.JPG)
 
-![Image](images/final_front_left.jpg)
+![Image](images/final_front_left.JPG)
 
-![Image](images/final_back.jpg)
+![Image](images/final_back.JPG)
 
-![Image](images/final_side.jpg)
+![Image](images/final_side.JPG)
 
 
 # Lessons learnt
